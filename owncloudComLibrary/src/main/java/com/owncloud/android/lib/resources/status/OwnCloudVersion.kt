@@ -25,9 +25,12 @@
 
 package com.owncloud.android.lib.resources.status
 
+import android.annotation.SuppressLint
 import android.os.Parcel
 import android.os.Parcelable
 
+@SuppressLint("ParcelCreator")
+@OpenForTesting
 class OwnCloudVersion(version: String) : Comparable<OwnCloudVersion>, Parcelable {
 
     // format is in version

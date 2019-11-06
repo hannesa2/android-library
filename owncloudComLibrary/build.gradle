@@ -30,8 +30,9 @@ android {
     }
 
     lintOptions {
-        abortOnError false
+        abortOnError true
         ignoreWarnings true
+        lintConfig file('config/lint.xml')
     }
 
     compileOptions {
